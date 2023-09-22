@@ -1,0 +1,8 @@
+version: '3'
+service:
+  playwright:
+    image:mcr.microsoft.com/playwright
+    volumes:
+      - .:/app
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
